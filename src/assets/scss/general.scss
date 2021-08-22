@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+  url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProDisplaySemibold';
+  src: url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+  url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProDisplayBold';
+  src: url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+  url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProDisplayBlack';
+  src: url('../fonts/SFProDisplay-Black.woff') format('woff'),
+  url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mt-40{
+  margin-top: 40px;
+}
+
+h1{
+  font-size: 38px;
+}
+
+.base-font-face{
+  font-family: 'SFProDisplay';
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+}
+.base-color{
+  color: #868686;;
+}
+.link{
+  color: #2fabff;
+  cursor: pointer;
+}
+.bold{
+  font-family: 'SFProDisplayBold';
+  font-weight: 600;
+}
+.black{
+  font-family: 'SFProDisplayBlack';
+  font-weight: 800;
+}
+.top-header{
+  background-color: #182D40;
+  color: #9AB5CE;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px 0;
+}
+
+.breadcrumbs{
+  color: #868686;
+}
+.breadcrumbs .icon{
+  margin-left: 5px;
+  margin-right: 9px;
+}
+.breadcrumbs-active{
+  font-family: 'SFProDisplaySemibold';
+  color: #182D40;
+  font-weight: 500;
+}
+.reg-form .select, .reg-form .form-group{
+  position: relative;
+}
+.reg-form .select label, .reg-form .form-control + label{
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-family: 'SFProDisplay';
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  color: #868686;
+  margin-bottom: 0;
+}
+.reg-form .vs__dropdown-toggle, .reg-form .form-control{
+  height: 50px;
+  padding: 10px 10px 0 24px;
+  border: 1px solid #DCDCDC;
+  border-radius: 2px;
+  line-height: 1;
+  font-family: 'SFProDisplay';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #182D40;
+}
+.reg-form .vs__dropdown-toggle{
+  padding-top: 0;
+}
+.reg-form .vs--single.vs--open .vs__selected{
+  display: none;
+}
+.reg-form .vs__selected-options{
+  padding-top: 10px;
+}
+.reg-form .form-control:focus{
+  height: 50px;
+  color: #182D40;
+}
+.reg-form .select .vs--open + label, .reg-form .form-control.focus-visible + label{
+  top: 5px;
+  font-size: 12px;
+}
+.reg-form .select label.not-empty, .reg-form label.not-empty{
+  top: 5px;
+  font-size: 12px;
+}
+.reg-form .vs__selected{
+  margin: 0;
+  padding: 0;
+}
+.reg-form .vs__dropdown-option{
+  color: #868686;
+}
+.reg-form .vs__dropdown-option--highlight{
+  background: transparent;
+}
+.reg-form .vs__dropdown-option--highlight .select-title,
+.reg-form .vs__dropdown-option--highlight .select-text{
+  font-family: 'SFProDisplayBold';
+  font-weight: 600;
+  color: #182D40;
+}
+.reg-form .select-title{
+  font-family: 'SFProDisplay';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #868686;
+}
+.reg-form .select-text{
+  font-family: 'SFProDisplay';
+  font-weight: 400;
+  font-size: 12px;
+}
