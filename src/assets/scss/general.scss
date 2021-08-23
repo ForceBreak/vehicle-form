@@ -29,6 +29,24 @@
   font-weight: normal;
   font-style: normal;
 }
+body, html{
+  height: 100%;
+}
+#app{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
+}
+
+.main {
+  flex-grow: 1;
+}
+
 
 .mt-20{
   margin-top: 20px;
@@ -44,6 +62,9 @@ h1{
   font-size: 38px;
 }
 
+h1.base-font-face{
+  font-size: 38px;
+}
 .base-font-face{
   font-family: 'SFProDisplay';
   font-weight: 400;
@@ -56,6 +77,10 @@ h1{
   color: #2fabff;
   cursor: pointer;
 }
+.link:hover{
+  text-decoration: none;
+  color: #2fabff;
+}
 .bold{
   font-family: 'SFProDisplayBold';
   font-weight: 600;
@@ -64,7 +89,7 @@ h1{
   font-family: 'SFProDisplayBlack';
   font-weight: 800;
 }
-.top-header{
+.top-bottom-bar{
   background-color: #182D40;
   color: #9AB5CE;
   font-weight: 600;
@@ -160,4 +185,90 @@ h1{
   font-family: 'SFProDisplay';
   font-weight: 400;
   font-size: 12px;
+}
+.reg-form .vs--open .vs__dropdown-toggle,
+.reg-form .select .vs--open .vs__dropdown-menu{
+  border-left: 2px solid #819BB4;
+  border-right: 2px solid #819BB4;
+  
+}
+.reg-form .select .vs--open{
+  border-top: 2px solid #819BB4;
+}
+.reg-form .select .vs--open .vs__dropdown-menu{
+  border-bottom: 2px solid #819BB4;
+}
+.reg-form .vehicleTypeSub{
+  padding: 16px 20px 16px 67px;
+}
+.reg-form .vehicleTypeSub-wrap{
+  border-left: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
+}
+.reg-form .vehicleTypeSub{
+  border-bottom: 1px solid #DCDCDC;
+}
+.reg-form .vehicleTypeSub .custom-control-label{
+  font-family: 'SFProDisplay';
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  color: #868686;
+  cursor: pointer;
+}
+.reg-form .vehicleTypeSub .custom-control-label::before,
+.reg-form .vehicleTypeSub .custom-control-label::after{
+  width: 17px;
+  height: 17px;
+  top: calc(50% - 10px);
+  left: -37px;
+}
+.reg-form .custom-control-input:checked ~ .custom-control-label::before{
+  background-color: #9AB5CE;
+  border-color: transparent;
+  outline: none;
+  box-shadow: none;
+  transition: none;
+}
+.reg-form .custom-radio .custom-control-input:checked ~ .custom-control-label::after{
+  background-size: 40%;
+  border-color: transparent;
+}
+.reg-form .vehicleTypeSub.coloredGroup{
+  background: #EAF7FF;
+  border: 1px solid #2FABFF;
+}
+.reg-form .vehicleTypeSub.coloredGroup .custom-control-label{
+  color: #182D40;
+  font-family: 'SFProDisplaySemibold';
+  font-weight: 500;
+}
+.reg-form .inputGroup{
+  margin-bottom: 12px;
+}
+
+.addMore-wrap{
+  border: 1px solid #DCDCDC;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 60px;
+}
+.addMore-wrap .icon{
+  border: 1px solid #DCDCDC;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+.continue{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.continue.btn-success{
+  background-color: #29A30B;
+  border-radius: 2px;
+  padding: 7px 32px;
+}
+.continue.btn-success:hover{
+  background-color: #29A30B;
 }
