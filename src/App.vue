@@ -274,6 +274,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('./assets/scss/general.scss');
+@import './assets/scss/general.scss';
 @import "vue-select/src/scss/vue-select.scss";
 </style>

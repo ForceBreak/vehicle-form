@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'SFProDisplay';
-  src: url('../fonts/SFProDisplay-Regular.woff') format('woff'),
-  url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/SFProDisplay-Regular.woff') format('woff'),
+  url('./assets/fonts/SFProDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProDisplaySemibold';
-  src: url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
-  url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+  src: url('./assets/fonts/SFProDisplay-Semibold.woff') format('woff'),
+  url('./assets/fonts/SFProDisplay-Semibold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProDisplayBold';
-  src: url('../fonts/SFProDisplay-Bold.woff') format('woff'),
-  url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/SFProDisplay-Bold.woff') format('woff'),
+  url('./assets/fonts/SFProDisplay-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProDisplayBlack';
-  src: url('../fonts/SFProDisplay-Black.woff') format('woff'),
-  url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+  src: url('./assets/fonts/SFProDisplay-Black.woff') format('woff'),
+  url('./assets/fonts/SFProDisplay-Black.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -47,7 +47,6 @@ body, html{
   flex-grow: 1;
 }
 
-
 .mt-20{
   margin-top: 20px;
 }
@@ -60,11 +59,11 @@ body, html{
 
 h1{
   font-size: 38px;
+  &.base-font-face{
+    font-size: 38px;
+  }
 }
 
-h1.base-font-face{
-  font-size: 38px;
-}
 .base-font-face{
   font-family: 'SFProDisplay';
   font-weight: 400;
@@ -76,10 +75,10 @@ h1.base-font-face{
 .link{
   color: #2fabff;
   cursor: pointer;
-}
-.link:hover{
-  text-decoration: none;
-  color: #2fabff;
+  &:hover{
+    text-decoration: none;
+    color: #2fabff;
+  }
 }
 .bold{
   font-family: 'SFProDisplayBold';
@@ -100,175 +99,192 @@ h1.base-font-face{
 
 .breadcrumbs{
   color: #868686;
+  &-active{
+    font-family: 'SFProDisplaySemibold';
+    color: #182D40;
+    font-weight: 500;
+  }
+  .icon{
+    margin-left: 5px;
+    margin-right: 9px;
+  }
 }
-.breadcrumbs .icon{
-  margin-left: 5px;
-  margin-right: 9px;
-}
-.breadcrumbs-active{
-  font-family: 'SFProDisplaySemibold';
-  color: #182D40;
-  font-weight: 500;
-}
-.reg-form .select, .reg-form .form-group{
-  position: relative;
-}
-.reg-form .select label, .reg-form .form-control + label{
-  position: absolute;
-  top: 15px;
-  left: 16px;
-  font-family: 'SFProDisplay';
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.01em;
-  color: #868686;
-  margin-bottom: 0;
-}
-.reg-form .vs__dropdown-toggle, .reg-form .form-control{
-  height: 50px;
-  padding: 10px 10px 0 24px;
-  border: 1px solid #DCDCDC;
-  border-radius: 2px;
-  line-height: 1;
-  font-family: 'SFProDisplay';
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.01em;
-  color: #182D40;
-}
-.reg-form .vs__dropdown-toggle{
-  padding-top: 0;
-}
-.reg-form .vs--single.vs--open .vs__selected{
-  display: none;
-}
-.reg-form .vs__selected-options{
-  padding-top: 10px;
-}
-.reg-form .form-control:focus{
-  height: 50px;
-  color: #182D40;
-}
-.reg-form .select .vs--open + label, .reg-form .form-control.focus-visible + label{
-  top: 5px;
-  font-size: 12px;
-}
-.reg-form .select label.not-empty, .reg-form label.not-empty{
-  top: 5px;
-  font-size: 12px;
-}
-.reg-form .vs__selected{
-  margin: 0;
-  padding: 0;
-}
-.reg-form .vs__dropdown-option{
-  color: #868686;
-}
-.reg-form .vs__dropdown-option--highlight{
-  background: transparent;
-}
-.reg-form .vs__dropdown-option--highlight .select-title,
-.reg-form .vs__dropdown-option--highlight .select-text{
-  font-family: 'SFProDisplayBold';
-  font-weight: 600;
-  color: #182D40;
-}
-.reg-form .select-title{
-  font-family: 'SFProDisplay';
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.01em;
-  color: #868686;
-}
-.reg-form .select-text{
-  font-family: 'SFProDisplay';
-  font-weight: 400;
-  font-size: 12px;
-}
-.reg-form .vs--open .vs__dropdown-toggle,
-.reg-form .select .vs--open .vs__dropdown-menu{
-  border-left: 2px solid #819BB4;
-  border-right: 2px solid #819BB4;
-  
-}
-.reg-form .select .vs--open{
-  border-top: 2px solid #819BB4;
-}
-.reg-form .select .vs--open .vs__dropdown-menu{
-  border-bottom: 2px solid #819BB4;
-}
-.reg-form .vehicleTypeSub{
-  padding: 16px 20px 16px 67px;
-}
-.reg-form .vehicleTypeSub-wrap{
-  border-left: 1px solid #DCDCDC;
-  border-right: 1px solid #DCDCDC;
-}
-.reg-form .vehicleTypeSub{
-  border-bottom: 1px solid #DCDCDC;
-}
-.reg-form .vehicleTypeSub .custom-control-label{
-  font-family: 'SFProDisplay';
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.01em;
-  color: #868686;
-  cursor: pointer;
-}
-.reg-form .vehicleTypeSub .custom-control-label::before,
-.reg-form .vehicleTypeSub .custom-control-label::after{
-  width: 17px;
-  height: 17px;
-  top: calc(50% - 10px);
-  left: -37px;
-}
-.reg-form .custom-control-input:checked ~ .custom-control-label::before{
-  background-color: #9AB5CE;
-  border-color: transparent;
-  outline: none;
-  box-shadow: none;
-  transition: none;
-}
-.reg-form .custom-radio .custom-control-input:checked ~ .custom-control-label::after{
-  background-size: 40%;
-  border-color: transparent;
-}
-.reg-form .vehicleTypeSub.coloredGroup{
-  background: #EAF7FF;
-  border: 1px solid #2FABFF;
-}
-.reg-form .vehicleTypeSub.coloredGroup .custom-control-label{
-  color: #182D40;
-  font-family: 'SFProDisplaySemibold';
-  font-weight: 500;
-}
-.reg-form .inputGroup{
-  margin-bottom: 12px;
-}
+.reg-form{
+  .select, .form-group{
+    position: relative;
+  }
+  .select label,
+  .form-control + label{
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    font-family: 'SFProDisplay';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: #868686;
+    margin-bottom: 0;
+  }
+  .vs__dropdown-toggle,
+  .form-control{
+    height: 50px;
+    padding: 10px 10px 0 24px;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px;
+    line-height: 1;
+    font-family: 'SFProDisplay';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #182D40;
+  }
+  .vs__dropdown-toggle{
+    padding-top: 0;
+  }
+  .vs--single.vs--open {
+    .vs__selected{
+      display: none;
+    } 
+  }
+  .vs__selected-options{
+    padding-top: 10px;
+  }
+  .form-control{
+    &:focus{
+      height: 50px;
+      color: #182D40;
+    }
+  }
 
+  .select .vs--open + label, .form-control.focus-visible + label{
+    top: 5px;
+    font-size: 12px;
+  }
+  .select label.not-empty, label.not-empty{
+    top: 5px;
+    font-size: 12px;
+  }
+  .vs__selected{
+    margin: 0;
+    padding: 0;
+  }
+  .vs__dropdown-option{
+    color: #868686;
+  }
+  .vs__dropdown-option--highlight{
+    background: transparent;
+  }
+  .vs__dropdown-option--highlight{
+    .select-title,
+    .select-text{
+      font-family: 'SFProDisplayBold';
+      font-weight: 600;
+      color: #182D40;
+    }
+  }
+  .select-title,
+  .select-text{
+    font-family: 'SFProDisplay';
+    font-weight: 400;
+  }
+  .select-title{
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #868686;
+  }
+  .select-text{
+    font-size: 12px;
+  }
+  .vs--open .vs__dropdown-toggle,
+  .select .vs--open .vs__dropdown-menu{
+    border-left: 2px solid #819BB4;
+    border-right: 2px solid #819BB4;
+  }
+
+  .select{
+    .vs--open{
+      border-top: 2px solid #819BB4;
+      .vs__dropdown-menu{
+        border-bottom: 2px solid #819BB4;
+      }
+    }
+  }
+  .vehicleTypeSub-wrap{
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+  }
+  .vehicleTypeSub{
+    padding: 16px 20px 16px 67px;
+    border-bottom: 1px solid #DCDCDC;
+    .custom-control-label{
+      font-family: 'SFProDisplay';
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      color: #868686;
+      cursor: pointer;
+      &:before,
+      &:after{
+        width: 17px;
+        height: 17px;
+        top: calc(50% - 10px);
+        left: -37px;
+      }
+    }
+    &.coloredGroup{
+      background: #EAF7FF;
+      border: 1px solid #2FABFF;
+      .custom-control-label{
+        color: #182D40;
+        font-family: 'SFProDisplaySemibold';
+        font-weight: 500;
+      }
+    }
+  }
+  .custom-control-input{
+    &:checked {
+      &~ .custom-control-label{
+        &:before{
+          background-color: #9AB5CE;
+          border-color: transparent;
+          outline: none;
+          box-shadow: none;
+          transition: none;
+        }
+        &:after{
+          background-size: 40%;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  .inputGroup{
+    margin-bottom: 12px;
+  }
+}
 .addMore-wrap{
   border: 1px solid #DCDCDC;
   border-radius: 6px;
   padding: 20px;
   margin-top: 60px;
-}
-.addMore-wrap .icon{
-  border: 1px solid #DCDCDC;
-  border-radius: 2px;
-  width: 20px;
-  height: 20px;
-  margin-right: 9px;
+  .icon{
+    border: 1px solid #DCDCDC;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+  }
 }
 .continue{
   margin-top: 50px;
   margin-bottom: 100px;
-}
-.continue.btn-success{
-  background-color: #29A30B;
-  border-radius: 2px;
-  padding: 7px 32px;
-}
-.continue.btn-success:hover{
-  background-color: #29A30B;
+  &.btn-success{
+    background-color: #29A30B;
+    border-radius: 2px;
+    padding: 7px 32px;
+    &:hover{
+      background-color: #29A30B;
+    }
+  }
 }
